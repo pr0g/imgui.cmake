@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(imgui-cmake LANGUAGES CXX)
+project(imgui.cmake LANGUAGES CXX)
 
 add_library(${PROJECT_NAME} STATIC)
 target_sources(
