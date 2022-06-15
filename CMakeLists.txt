@@ -19,6 +19,7 @@ target_compile_definitions(
         IMGUI_DISABLE_INCLUDE_IMCONFIG_H
         $<$<BOOL:${IMGUI_DISABLE_OBSOLETE_FUNCTIONS}>:IMGUI_DISABLE_OBSOLETE_FUNCTIONS>
 )
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_11)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES DEBUG_POSTFIX "d")
 
