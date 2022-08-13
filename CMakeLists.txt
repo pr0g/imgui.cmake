@@ -31,5 +31,5 @@ install(
     EXPORT ${PROJECT_NAME}-config
     NAMESPACE ${PROJECT_NAME}::
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME})
-install(FILES imgui/imgui.h imgui/imgui_internal.h
+install(FILES imgui/imgui.h imgui/imgui_internal.h imgui/imstb_textedit.h
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
