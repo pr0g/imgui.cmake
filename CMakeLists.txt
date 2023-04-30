@@ -6,7 +6,8 @@ add_library(${PROJECT_NAME} STATIC)
 target_sources(
     ${PROJECT_NAME}
     PRIVATE imgui/imgui.cpp imgui/imgui_demo.cpp imgui/imgui_draw.cpp
-            imgui/imgui_widgets.cpp imgui/imgui_tables.cpp)
+            imgui/imgui_widgets.cpp imgui/imgui_tables.cpp
+            imgui/misc/cpp/imgui_stdlib.cpp)
 
 include(GNUInstallDirs)
 
@@ -31,5 +32,5 @@ install(
     EXPORT ${PROJECT_NAME}-config
     NAMESPACE ${PROJECT_NAME}::
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME})
-install(FILES imgui/imgui.h imgui/imconfig.h
+install(FILES imgui/imgui.h imgui/imconfig.h imgui/misc/cpp/imgui_stdlib.h
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
