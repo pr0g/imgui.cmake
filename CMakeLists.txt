@@ -33,4 +33,4 @@ install(
     NAMESPACE ${PROJECT_NAME}::
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME})
 install(FILES imgui/imgui.h imgui/imconfig.h imgui/misc/cpp/imgui_stdlib.h
-        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+              imgui/imgui_internal.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
